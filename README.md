@@ -1,2 +1,2 @@
-# Personal-Portfolio
-React Website for my Personal Portfolio
+# personal-portfolio
+React website for my personal portfolio
