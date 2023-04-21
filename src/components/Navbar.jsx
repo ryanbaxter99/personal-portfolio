@@ -21,9 +21,8 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt='logo' className='w-9 h-9 object-contain'/>
-          <p className="text-white text-[18px] font-bold cursor-pointer flex"> 
-            Ryan &nbsp; 
-            <span className="sm:block hidden"> | Baxter</span>
+          <p className="text-white text-[14px] font-bold cursor-pointer flex"> 
+            Ryan&nbsp; <span className="sm:block hidden"> | Baxter</span>
           </p>
         </Link>
 
@@ -44,9 +43,9 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        
+
+        {/* Hamburger Menu when the screen size is smaller */}
         <div className='sm:hidden flex flex-1 justify-end items-center'>
-          
           <img
             src={toggle ? close : menu}
             alt='menu'

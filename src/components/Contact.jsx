@@ -79,7 +79,7 @@ const Contact = () => {
         <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col gap-8">
           {/* Name input */}
           <label className="flex flex-col">
-            <span classNAme="text-white font-medium mb-4">Your Name</span>
+            <span className="text-white font-medium mb-4">Your Name</span>
             <input 
               type="text"
               name="name" 
