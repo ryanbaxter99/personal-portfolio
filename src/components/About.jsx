@@ -1,67 +1,76 @@
 import React from "react";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
-
 import { styles } from "../styles";
 import { services } from "../constants";
-import { SectionWrapper } from '../hoc'
+import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
-
-// need to devine the service card component 
-const ServiceCard = ({ index, title, icon }) => {
-  return (
-    <Tilt className="xs:w-[250px] w-full">
-      <motion.div variants={fadeIn("right", "spring", 0.5 * index, 0.75)} className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'>
-        <div options={{
-          max: 45, 
-          scale: 1, 
-          speed: 450,
-          }} className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
-        >
-          <img 
-            src={icon} 
-            alt="web-development" 
-            className="w-16 h-16 object-contain" 
-          />
-          <h3 className='text-white text-[20px] font-bold text-center'>
-            {title}
-          </h3>
-        </div>
-      </motion.div>
-    </Tilt>
-  )
-}
+import { Tech } from "../components";
+import { technologies } from "../constants";
 
 const About = () => {
   return (
     <>
-      <motion.div varients={textVariant()}>
-        <p className={styles.sectionSubText}> 
-          Introduction
-        </p>
+      <motion.div variants={textVariant()}>
+        <p className={styles.sectionBullet}>Introduction</p>
 
-        <h2 className={styles.sectionHeadText}>
-          Overview.
-        </h2>
+        <h2 className={styles.sectionHeadText}>About Me</h2>
 
-        {/* Overview expierence */}
-        <motion.p variants={fadeIn("", "", 0.1, 1)} className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus minus illo laudantium asperiores est. 
-            Dolorem distinctio possimus debitis consequatur sequi quibusdam, quo assumenda qui, harum iste laborum adipisci voluptatem, 
-            sint suscipit ex vitae maiores. Temporibus culpa impedit molestiae voluptatum beatae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-            Quia molestiae asperiores minima laboriosam consequatur quas rerum repellat voluptas esse fugit voluptates facilis et, 
-            maxime ullam adipisci corrupti? Dolores eveniet eos mollitia dicta perspiciatis nobis laboriosam velit sed! Reprehenderit, nemo alias.
-        </motion.p>
+        <div className="flex flex-col lg:flex-row lg:gap-10">
+          <div className="md:w-2/3 lg:w-1/2 xl:w-5/12">
+            <motion.p
+              variants={fadeIn("", "", 0.1, 1)}
+              className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+            >
+              Hello! My name is Ryan, and I'm a software engineer residing in Ann
+              Arbor, MI. I have an insatiable appetite for learning about emerging
+              technologies and a fervent passion for programming and software
+              development. My forte lies in crafting digital products for the web,
+              be it websites, applications, or any other web-based solutions. My
+              ultimate objective is to create robust, scalable, and efficient
+              software that delivers exceptional user experiences.
+            </motion.p>
 
-        {/* Expiernce Cards */}
-        <div className='mt-20 flex flex-wrap gap-10'>
-          {services.map((service, index) => (
-            <ServiceCard key={service.title} index={index} {...service} />
-          ))}
+            <motion.p
+              variants={fadeIn("", "", 0.1, 1)}
+              className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+            >
+              I'm a Computer Science student at the University of Michigan, where
+              I'm sharpening my technical skills. During the 2022 and 2023 calendar
+              years, I had the privilege of interning at nCino, where I gained
+              invaluable industry experience. Upon graduation in 2023, I will embark
+              on a new journey as a Software Development Engineer (SDE I) at{" "}
+              <a
+                href="https://www.dominos.com/"
+                className="text-sky-400 hover:text-emerald-400"
+              >
+                Domino's.
+              </a>
+            </motion.p>
+
+            <motion.p
+              variants={fadeIn("", "", 0.1, 1)}
+              className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+            >
+              Here are a few technologies I have worked with:
+            </motion.p>
+
+            <ul className="technology-list mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] list-none">
+              {technologies.map((technology) => (
+                <li key={technology.name} className="mb-2">
+                  {technology.name}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="md:w-1/3 lg:w-1/2 xl:w-7/12 flex justify-center lg:block lg:mt-6 mt-6 md:mt-0">
+            <Tech />
+          </div>
         </div>
       </motion.div>
     </>
-  )
-}
+  );
+};
 
-export default SectionWrapper(About, 'about');
+export default SectionWrapper(About, "about");

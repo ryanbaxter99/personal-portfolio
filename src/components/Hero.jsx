@@ -18,7 +18,7 @@ const Hero = () => {
           <h1 className={`text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]`}>Ryan Baxter.</h1>
 
           {/* Hero sub title */}
-          <h2 className={`text-sky-400 font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]`}>I can't code for the life of me.</h2>
+          <h2 className={`text-sky-400 font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]`}>I make software</h2>
 
           {/* Hero About Me */}
           <p className={`mt-2 text-white-100 hero-disc sm:small-hero-disc`}> 

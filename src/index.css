@@ -29,6 +29,26 @@
   }
 }
 
+.technology-list {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  list-style: none;
+  padding-left: 0;
+  column-gap: 0.5rem;
+  max-width: 550px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.technology-list li::before {
+  content: "• ";
+  color: #38BDF8;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
 
 .black-gradient {
   background: #000000; /* fallback for old browsers */
