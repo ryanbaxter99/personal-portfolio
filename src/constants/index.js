@@ -4,25 +4,25 @@ import {
     creator,
     web,
     javascript,
-    typescript,
     html,
     css,
     reactjs,
-    redux,
     tailwind,
     nodejs,
-    mongodb,
     git,
     figma,
-    docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
+    michiganLogo,
+    boyne,
+    ncino,
+    wingmanGPT,
+    positive,
+    huron,
+    tcp,
     threejs,
+    cplus,
+    python,
+    c,
+
   } from "../assets";
   
   export const navLinks = [
@@ -61,6 +61,18 @@ import {
   
   const technologies = [
     {
+      name: "Python",
+      icon: python,
+    },
+    {
+      name: "C++",
+      icon: cplus,
+    },
+    {
+      name: "C",
+      icon: c,
+    },
+    {
       name: "HTML 5",
       icon: html,
     },
@@ -73,16 +85,8 @@ import {
       icon: javascript,
     },
     {
-      name: "TypeScript",
-      icon: typescript,
-    },
-    {
       name: "React JS",
       icon: reactjs,
-    },
-    {
-      name: "Redux Toolkit",
-      icon: redux,
     },
     {
       name: "Tailwind CSS",
@@ -91,10 +95,6 @@ import {
     {
       name: "Node JS",
       icon: nodejs,
-    },
-    {
-      name: "MongoDB",
-      icon: mongodb,
     },
     {
       name: "Three JS",
@@ -108,63 +108,58 @@ import {
       name: "figma",
       icon: figma,
     },
-    {
-      name: "docker",
-      icon: docker,
-    },
   ];
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      title: "Zipline Tour Guide",
+      company_name: "Boyne Highlands Resorts",
+      icon: boyne,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "Dec 2019 - Feb 2021",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Zipline Guide is a full-time seasonal position at Boyne Highlands Resort. ",
+        "Guides are responsible for organizing and leading group tours on the Zip Line while ensuring safety of all guests and creating positive experience.",
+      
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
+      title: "Software Fundementals Tutor",
+      company_name: "University of Michgan Digital Water Lab",
+      icon: michiganLogo,
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      date: "Jan 2021 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+        "Provide a clear understanding of core concepts related to EECS 183 and EECS 280.",
+        "Provide feedback and instruction on misunderstood material",
         "Implementing responsive design and ensuring cross-browser compatibility.",
+        "Host weekly sessions with students teaching object-oriented programming principles.",
+      ],
+    },
+    {
+      title: "Software Engineer Intern",
+      company_name: "nCino",
+      icon: ncino,
+      iconBg: "#383E56",
+      date: "Jan 2022 - Present",
+      points: [
+        "Used Salesforce Lightning Web Components to develop statistic analysis tools for corporate banking loans and income statements.",
+        "Improved the UX design of the Salesforce spreadsheet platform used in financial credit analysis.",
+        "Used Google’s Angular framework to maintain and upgrade existing company software packages.",
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
     {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      title: "Full Stack Engineer Research",
+      company_name: "University of Michgan Digital Water Lab",
+      icon: michiganLogo,
+      iconBg: "#383E56",
+      date: "Aug 2022 - Jan 2023",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+        "Work with community stakeholders to understand how users interact with data and how they use relevant tools to support community objectives and goals.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Conducted research and developed data visualizations and app building libraries that gave better access to information regarding the Huron River Watershed to users.",
       ],
     },
   ];
@@ -198,67 +193,96 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "WingmanGPT",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "A command-line tool that utilizes OpenAI's ChatGPT model to generate conversation starters for you, and can even send a text message to a specified number. It's like your own personal wingman!",
       tags: [
         {
-          name: "react",
+          name: "Python",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "ChatGPT",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "APIs",
           color: "pink-text-gradient",
         },
+        {
+          name: "Command-line",
+          color: "blue-text-gradient",
+        },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: wingmanGPT,
+      source_code_link: "https://github.com/btschwartz12/WingmanGPT",
     },
     {
-      name: "Job IT",
+      name: "Positive Pupil Popup",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "The Chrome extension rewards students who submit their assignments on time with a fun break option. They can play the 'BullRun' mini game or choose from a variety of activities using the 'bored api'. This encourages students to stay focused on their studies while also providing a brief, enjoyable break.",
       tags: [
         {
-          name: "react",
+          name: "HTML/CSS",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "JQuery",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "Chrome",
           color: "pink-text-gradient",
         },
+        {
+          name: "Javascript",
+          color: "blue-text-gradient",
+        },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: positive,
+      source_code_link: "https://github.com/ClubRBJ/positive-pupil-popup",
     },
     {
-      name: "Trip Guide",
+      name: "Huron River Subway Map",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Prototype subway map for the Huron River Watershed. The map is designed to be a tool for community members to learn about the watershed and the organizations that work to protect it. The prototype uses the Mapbox API and displays lake locations.",
       tags: [
         {
-          name: "nextjs",
+          name: "HTML/CSS",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "Javascript",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "MapBox",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: huron,
+      source_code_link: "https://github.com/ryanbaxter99/Huron-River-Subway-Prototype",
+    },
+    {
+      name: "The Common Phenomonon Website",
+      description:
+        "My first ever HTML/CSS website for a Michigan based podcost.",
+      tags: [
+        {
+          name: "HTML/CSS",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Javascript",
+          color: "green-text-gradient",
+        },
+        {
+          name: "MapBox",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: tcp,
+      source_code_link: "https://github.com/ryanbaxter99/Huron-River-Subway-Prototype",
     },
   ];
   

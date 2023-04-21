@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 // import { useHistory } from 'react-router-dom';
-import { michigan } from "../assets";
+import { logo } from "../assets";
 
 function WelcomePage({ onFinish }) { // Change prop name from onComplete to onFinish
     const [fadeOut, setFadeOut] = useState(false);
@@ -25,7 +25,7 @@ function WelcomePage({ onFinish }) { // Change prop name from onComplete to onFi
     <div className={`welcome-page ${fadeOut ? 'fade-out' : ''}`}>
         {/* Add your SVG logo here */}
         <svg>
-            <use href={michigan} />
+            <use href={logo} />
         </svg>
 
         {/* Add any other welcome message or content here */}

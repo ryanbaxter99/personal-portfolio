@@ -55,7 +55,7 @@ const About = () => {
               Here are a few technologies I have worked with:
             </motion.p>
 
-            <ul className="technology-list mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] list-none">
+            <ul className="technology-list mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] list-none ">
               {technologies.map((technology) => (
                 <li key={technology.name} className="mb-2">
                   {technology.name}
@@ -65,7 +65,9 @@ const About = () => {
           </div>
 
           <div className="md:w-1/3 lg:w-1/2 xl:w-7/12 flex justify-center lg:block lg:mt-6 mt-6 md:mt-0">
-            <Tech />
+            <div className="mt-4">
+              <Tech />
+            </div>
           </div>
         </div>
       </motion.div>
