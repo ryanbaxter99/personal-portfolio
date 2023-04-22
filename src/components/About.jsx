@@ -37,7 +37,7 @@ const About = () => {
             >
               I'm a Computer Science student at the University of Michigan, where
               I'm sharpening my technical skills. During the 2022 and 2023 calendar
-              years, I had the privilege of interning at nCino, where I gained
+              years, I had the privilege of interning at <a href="https://www.ncino.com/" className="text-sky-400 hover:text-emerald-400">nCino</a>, where I gained
               invaluable industry experience. Upon graduation in 2023, I will embark
               on a new journey as a Software Development Engineer (SDE I) at{" "}
               <a
@@ -47,6 +47,7 @@ const About = () => {
                 Domino's.
               </a>
             </motion.p>
+
 
             <motion.p
               variants={fadeIn("", "", 0.1, 1)}
