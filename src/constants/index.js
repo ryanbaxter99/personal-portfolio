@@ -113,31 +113,6 @@ import {
   
   const experiences = [
     {
-      title: "Zipline Tour Guide",
-      company_name: "Boyne Highlands Resorts",
-      icon: boyne,
-      iconBg: "#383E56",
-      date: "Dec 2019 - Feb 2021",
-      points: [
-        "Zipline Guide is a full-time seasonal position at Boyne Highlands Resort. ",
-        "Guides are responsible for organizing and leading group tours on the Zip Line while ensuring safety of all guests and creating positive experience.",
-      
-      ],
-    },
-    {
-      title: "Software Fundementals Tutor",
-      company_name: "University of Michgan",
-      icon: michiganLogo,
-      iconBg: "#383E56",
-      date: "Jan 2021 - Present",
-      points: [
-        "Provide a clear understanding of core concepts related to EECS 183 and EECS 280.",
-        "Provide feedback and instruction on misunderstood material",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Host weekly sessions with students teaching object-oriented programming principles.",
-      ],
-    },
-    {
       title: "Software Engineer Intern",
       company_name: "nCino",
       icon: ncino,
@@ -161,6 +136,31 @@ import {
         "Work with community stakeholders to understand how users interact with data and how they use relevant tools to support community objectives and goals.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
         "Conducted research and developed data visualizations and app building libraries that gave better access to information regarding the Huron River Watershed to users.",
+      ],
+    },
+    {
+      title: "Software Fundementals Tutor",
+      company_name: "University of Michgan",
+      icon: michiganLogo,
+      iconBg: "#383E56",
+      date: "Jan 2021 - Present",
+      points: [
+        "Provide a clear understanding of core concepts related to EECS 183 and EECS 280.",
+        "Provide feedback and instruction on misunderstood material",
+        "Implementing responsive design and ensuring cross-browser compatibility.",
+        "Host weekly sessions with students teaching object-oriented programming principles.",
+      ],
+    },
+    {
+      title: "Zipline Tour Guide",
+      company_name: "Boyne Highlands Resorts",
+      icon: boyne,
+      iconBg: "#383E56",
+      date: "Dec 2019 - Feb 2021",
+      points: [
+        "Zipline Guide is a full-time seasonal position at Boyne Highlands Resort. ",
+        "Guides are responsible for organizing and leading group tours on the Zip Line while ensuring safety of all guests and creating positive experience.",
+      
       ],
     },
   ];
