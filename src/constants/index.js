@@ -18,6 +18,7 @@ import {
     positive,
     huron,
     tcp,
+    sports,
     threejs,
     cplus,
     python,
@@ -266,7 +267,7 @@ import {
     {
       name: "The Common Phenomonon Website",
       description:
-        "My first ever HTML/CSS website for a Michigan based podcost.",
+        "My first ever HTML/CSS website for a Michigan based podcost. The website is designed to be a platform for The Common Phenomenon to post their podcast episodes and provide information about the podcast. The website uses the iFrame API to play TCP episodes all on one website.",
       tags: [
         {
           name: "HTML/CSS",
@@ -277,12 +278,33 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "MapBox",
+          name: "iFrame",
           color: "pink-text-gradient",
         },
       ],
       image: tcp,
-      source_code_link: "https://github.com/ryanbaxter99/Huron-River-Subway-Prototype",
+      source_code_link: "https://github.com/ryanbaxter99/The-Common-Phenomenon",
+    },
+    {
+      name: "UPSL vs. NBA API",
+      description:
+        "Python project that uses two differnet APIs that fetches data about Premier Soccer League players and NBA players and compares the data collected. The comparisons made are then outputed as visuals using 'matplotlib'.",
+      tags: [
+        {
+          name: "Python",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "DB Browser",
+          color: "green-text-gradient",
+        },
+        {
+          name: "matplotlib",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: sports,
+      source_code_link: "https://github.com/ryanbaxter99/sports-api-personal-project",
     },
   ];
   
