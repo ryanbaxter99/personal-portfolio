@@ -1,8 +1,10 @@
 import { motion } from 'framer-motion';
+import React from 'react';
+import ReactTypingEffect from 'react-typing-effect';
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-screen mx-auto">Hero
+    <section className="relative w-full about-padding mx-auto">Hero
   
       <div className={`absolute inset-0 top-[140px]  max-w-7xl mx-auto sm:px-16 px-6 flex flex-row items-start gap-5`}>
         <div className='flex flex-col justify-center items-center mt-5'>
@@ -15,10 +17,20 @@ const Hero = () => {
           <h3 className={`text-sky-400 font-light`}>Hi, my name is</h3>
 
           {/* Hero name */}
-          <h1 className={`text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]`}>Ryan Baxter.</h1>
+          <h1 className={`text-white font-black md:text-[3.75rem] sm:text-[3.125rem] xs:text-[2.5rem] text-[1.875rem]`}>
+            <ReactTypingEffect
+              text={['Ryan Baxter.']}
+              speed={100}
+              eraseSpeed={50}
+              typingDelay={500}
+              cursorClassName="text-white"
+            />
+          </h1>
 
           {/* Hero sub title */}
-          <h2 className={`text-sky-400 font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]`}>I make software</h2>
+          <h2 className={`text-sky-400 font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]`}>
+            I make software
+          </h2>
 
           {/* Hero About Me */}
           <p className={`mt-2 text-white-100 hero-disc sm:small-hero-disc`}> 
@@ -32,7 +44,7 @@ const Hero = () => {
       </div>
 
       {/* Scroll down animation */}
-      <div className="absolute inset-x-0 bottom-4 w-full flex justify-center items-center">
+      {/* <div className="absolute inset-x-0 bottom-4 w-full flex justify-center items-center">
         <a href='#about'>
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.dev
@@ -48,7 +60,7 @@ const Hero = () => {
             />
           </div>
         </a>
-      </div>
+      </div> */}
     </section>
 
   )

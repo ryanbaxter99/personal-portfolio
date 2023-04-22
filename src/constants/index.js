@@ -126,7 +126,7 @@ import {
     },
     {
       title: "Software Fundementals Tutor",
-      company_name: "University of Michgan Digital Water Lab",
+      company_name: "University of Michgan",
       icon: michiganLogo,
       iconBg: "#383E56",
       date: "Jan 2021 - Present",
@@ -196,7 +196,7 @@ import {
     {
       name: "WingmanGPT",
       description:
-        "A command-line tool that utilizes OpenAI's ChatGPT model to generate conversation starters for you, and can even send a text message to a specified number. It's like your own personal wingman!",
+        "Cutting-edge command-line tool that uses OpenAI's ChatGPT model to generate personalized conversation starters and send text messages directly from your terminal. Built using Python and osascript, this tool lets you input a subject and receive a custom message created by ChatGPT. With just a few simple commands, you can have your own personal wingman at your fingertips.",
       tags: [
         {
           name: "Python",
@@ -265,7 +265,7 @@ import {
       source_code_link: "https://github.com/ryanbaxter99/Huron-River-Subway-Prototype",
     },
     {
-      name: "The Common Phenomonon Website",
+      name: "TCP Website",
       description:
         "My first ever HTML/CSS website for a Michigan based podcost. The website is designed to be a platform for The Common Phenomenon to post their podcast episodes and provide information about the podcast. The website uses the iFrame API to play TCP episodes all on one website.",
       tags: [
@@ -288,7 +288,7 @@ import {
     {
       name: "UPSL vs. NBA API",
       description:
-        "Python project that uses two differnet APIs that fetches data about Premier Soccer League players and NBA players and compares the data collected. The comparisons made are then outputed as visuals using 'matplotlib'.",
+        "Experience the power of data analysis with this dynamic Python project! By utilizing two distinct APIs - the Premier Soccer League API and the NBA API - this tool collects detailed data on players from both sports and generates insightful comparisons. With the help of 'matplotlib', this project outputs visually compelling graphs that help you better understand the performance metrics of your favorite players.",
       tags: [
         {
           name: "Python",

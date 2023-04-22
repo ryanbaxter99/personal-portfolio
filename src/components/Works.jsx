@@ -32,7 +32,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
         </div>
 
         {/* project info tags on bottom of card */}
-        <div className='mt-4 flex flex-wrap gap-2'>
+        <div className='mt-4 flex flex-wrap justify-center gap-2'>
           {tags.map((tag) => (
             <p
               key={`${name}-${tag.name}`}
@@ -42,7 +42,6 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
             </p>
           ))}
         </div>
-
       </Tilt>
     </motion.div>
   )
@@ -54,7 +53,7 @@ const Works = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionBullet} text-center`}>
-          My work
+          My Work
         </p>
 
         <h2 className={`${styles.sectionHeadText} text-center`}>
