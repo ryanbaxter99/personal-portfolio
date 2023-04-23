@@ -7,6 +7,11 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
+// template id " template_hlummkh "
+
+// service id " service_f06r2ar "
+
+// public key " q-POvosDL3o0ikq4C "
 
 const Contact = () => {
   const formRef = useRef();
@@ -30,13 +35,13 @@ const Contact = () => {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault;
+    e.preventDefault();
     setLoading(true);
 
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        'service_f06r2ar',
+        'template_hlummkh',
         {
           from_name: form.name,
           to_name: "Ryan Baxter",
@@ -44,7 +49,7 @@ const Contact = () => {
           to_email: "rybaxter@umich.edu",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        'q-POvosDL3o0ikq4C'
       )
       .then(
         () => {
@@ -63,6 +68,7 @@ const Contact = () => {
         }
       );
   };
+
 
   return (
     <div className="xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden">

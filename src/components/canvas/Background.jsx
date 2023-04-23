@@ -1,26 +1,35 @@
-import { useCallback } from "react";
+import { useCallback, useState, useEffect } from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import particlesOptions from "./particles.json";
 
 const Background = () => {
-    const particlesInit = useCallback(async engine => {
-        console.log(engine);
-        await loadFull(engine);
-    }, []);
+  const [delayedRender, setDelayedRender] = useState(false);
 
-    const particlesLoaded = useCallback(async container => {
-        await console.log(container);
-    }, []);
+  useEffect(() => {
+    const delay = setTimeout(() => {
+      setDelayedRender(true);
+    }, 3000);
+    return () => clearTimeout(delay);
+  }, []);
 
-    return (
-        <Particles
-            id="tsparticles"
-            init={particlesInit}
-            loaded={particlesLoaded}
-            options={particlesOptions} // Update the JSON to update the background style
-        />
-    );
+  const particlesInit = useCallback(async (engine) => {
+    console.log(engine);
+    await loadFull(engine);
+  }, []);
+
+  const particlesLoaded = useCallback(async (container) => {
+    await console.log(container);
+  }, []);
+
+  return delayedRender ? (
+    <Particles
+      id="tsparticles"
+      init={particlesInit}
+      loaded={particlesLoaded}
+      options={particlesOptions} // Update the JSON to update the background style
+    />
+  ) : null;
 };
 
 export default Background;
