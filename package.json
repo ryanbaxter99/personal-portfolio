@@ -18,10 +18,14 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-parallax-tilt": "^1.7.129",
+    "react-particles": "^2.9.3",
     "react-router-dom": "^6.10.0",
+    "react-tsparticles": "^2.9.3",
     "react-typing-effect": "^2.0.5",
     "react-vertical-timeline-component": "^3.6.0",
-    "three": "^0.151.3"
+    "three": "^0.151.3",
+    "tsparticles": "^2.9.3",
+    "tsparticles-engine": "^2.9.3"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
