@@ -22,7 +22,7 @@ const Hero = () => {
               text={['Ryan Baxter.']}
               speed={100}
               eraseSpeed={50}
-              typingDelay={500}
+              typingDelay={1000}
               cursorClassName="text-white"
             />
           </h1>

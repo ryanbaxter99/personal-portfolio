@@ -39,6 +39,11 @@
   }
 }
 
+.typing-effect span:first-child {
+  margin-left: 0;
+}
+
+
 .technology-list {
   columns: 2;
   -webkit-columns: 2;
