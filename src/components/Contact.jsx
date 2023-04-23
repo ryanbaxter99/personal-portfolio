@@ -92,7 +92,7 @@ const Contact = () => {
 
           {/* Email input */}
           <label className="flex flex-col">
-            <span classNAme="text-white font-medium mb-4">Your Email</span>
+            <span className="text-white font-medium mb-4">Your Email</span>
             <input 
               type="text"
               name="email" 
@@ -105,7 +105,7 @@ const Contact = () => {
 
           {/* Message input */}
           <label className="flex flex-col">
-            <span classNAme="text-white font-medium mb-4">Your Message</span>
+            <span className="text-white font-medium mb-4">Your Message</span>
             <input 
               type="text"
               name="message" 
