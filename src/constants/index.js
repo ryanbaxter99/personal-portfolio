@@ -139,7 +139,7 @@ import {
       ],
     },
     {
-      title: "Software Fundementals Tutor",
+      title: "Software Fundamentals Tutor",
       company_name: "University of Michgan",
       icon: michiganLogo,
       iconBg: "#383E56",
@@ -223,7 +223,7 @@ import {
     {
       name: "Huron River Subway Map",
       description:
-        "Prototype subway map for the Huron River Watershed. The map is designed to be a tool for community members to learn about the watershed and the organizations that work to protect it. The prototype uses the Mapbox API and displays lake locations.",
+        "I created a prototype subway map for the Huron River Watershed as a resource for community members to explore and learn about the area and the organizations dedicated to preserving it. The map is built using the Mapbox API and showcases the locations of various lakes within the watershed.",
       tags: [
         {
           name: "HTML/CSS",
@@ -244,7 +244,7 @@ import {
     {
       name: "TCP Website",
       description:
-        "My first ever HTML/CSS website for a Michigan based podcost. The website is designed to be a platform for The Common Phenomenon to post their podcast episodes and provide information about the podcast. The website uses the iFrame API to play TCP episodes all on one website.",
+        "This is my first HTML/CSS website created for a Michigan-based podcast called The Common Phenomenon. The website serves as a platform for the podcast to share its episodes and provide information about the show. To enable visitors to play TCP episodes directly on the site, I integrated the iFrame API",
       tags: [
         {
           name: "HTML/CSS",
