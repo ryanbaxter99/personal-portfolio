@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactTypingEffect from 'react-typing-effect';
 import { motion } from "framer-motion";
-import { slideIn, textVariant } from "../utils/motion";
+import { slideIn } from "../utils/motion";
 
 const Hero = () => {
   const delayStep = 0.2; // Delay for the animation
@@ -38,12 +38,14 @@ const Hero = () => {
           variants={slideIn("right", "spring", delayStep * 2, 0.5)}
         >
           <ReactTypingEffect
-            text={['I Make Software.']}
+            text={['I Make Software.', 'I Make Websites.', 'I Make Apps.']}
             speed={100}
             eraseSpeed={50}
-            typingDelay={1000}
+            typingDelay={2000}
             cursorClassName="text-white"
+            loop
           />
+
         </motion.h2>
 
           {/* Hero About Me */}
@@ -55,8 +57,7 @@ const Hero = () => {
             variants={slideIn("right", "spring", delayStep * 3, 0.5)}
           >
             As a software developer, I have a strong passion for creating web applications that are both functional and 
-            aesthetically pleasing. Currently, I am gaining valuable experience as a full stack SWE Intern at 
-            &nbsp;<a href="https://www.ncino.com/" className="text-sky-400 hover:text-emerald-400">nCino</a>, 
+            aesthetically pleasing. Currently, I am gaining valuable experience as a full stack SWE Intern at <a href="https://www.ncino.com/" className="text-sky-400 hover:text-emerald-400">nCino</a>, 
             while also working as a freelance developer. I have several ongoing projects and I am constantly seeking 
             new opportunities to further hone my skills and expand my knowledge.
           </motion.p>
