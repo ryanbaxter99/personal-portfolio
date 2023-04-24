@@ -8,6 +8,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { Tech } from "../components";
 import { technologies } from "../constants";
 
+
 const About = () => {
   return (
     <>
