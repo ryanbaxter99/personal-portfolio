@@ -31,6 +31,14 @@
   padding-right: 20em;
 }
 
+
+.desktop-hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 20vh; /* This ensures the container covers the full viewport height */
+}
+
 /* Desktop */
 
 .text-content {
@@ -48,10 +56,19 @@
   margin-bottom: 40rem;
 }
 
+/* Laptop view */
+@media (min-width: 1024px) {
+  .hero-center {
+    margin-left: 25%;
+  }
+}
+
 @media (max-width: 1100px) {
   .hero-disc {
     padding-right: 1em;
   }
+
+  
 }
 
 

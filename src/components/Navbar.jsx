@@ -28,34 +28,35 @@ const Navbar = () => {
           </p>
         </Link>
 
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
-          {navLinks.map((Link) => (
-            <li
-              key={Link.id}
-              className={`${
-                active === Link.title 
-                  ? "text-white" 
-                  : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
-              onClick={() => {
-                setActive(Link.title);
-              }}
-            >
-              <a href={`#${Link.id}`}>{Link.title}</a>
+        <div className="flex justify-center">
+          <ul className="list-none hidden sm:flex flex-row gap-10 mx-auto items-center">
+            {navLinks.map((Link) => (
+              <li
+                key={Link.id}
+                className={`${
+                  active === Link.title 
+                    ? "text-white" 
+                    : "text-secondary"
+                } hover:text-white text-[18px] font-medium cursor-pointer`}
+                onClick={() => {
+                  setActive(Link.title);
+                }}
+              >
+                <a href={`#${Link.id}`}>{Link.title}</a>
+              </li>
+            ))}
+
+            {/* Resume button */}
+            <li>
+              <AwesomeButton type="secondary" className="aws-btn">
+                <a href="/Resume.pdf" target="_blank" rel="noreferrer">
+                  Resume
+                </a>
+              </AwesomeButton>
             </li>
-          ))}
+          </ul>
+        </div>
 
-          {/* Resume button */}
-          <li>
-            <AwesomeButton type="secondary" className="aws-btn">
-              <a href="/Resume.pdf" target="_blank" rel="noreferrer">
-                Resume
-              </a>
-            </AwesomeButton>
-          </li>
-        </ul>
-
-      
 
         {/* Hamburger Menu when the screen size is smaller */}
         <div className='sm:hidden flex flex-1 justify-end items-center'>
