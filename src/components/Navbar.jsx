@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { AwesomeButton } from "react-awesome-button";
 import { Sling as Hamburger } from 'hamburger-react';
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { michigan } from "../assets";
+import "react-awesome-button/dist/styles.css";
 
 const Navbar = () => {
   const [active, setActive] = useState('');
@@ -42,7 +44,18 @@ const Navbar = () => {
               <a href={`#${Link.id}`}>{Link.title}</a>
             </li>
           ))}
+
+          {/* Resume button */}
+          <li>
+            <AwesomeButton type="secondary" className="aws-btn">
+              <a href="/Resume.pdf" target="_blank" rel="noreferrer">
+                Resume
+              </a>
+            </AwesomeButton>
+          </li>
         </ul>
+
+      
 
         {/* Hamburger Menu when the screen size is smaller */}
         <div className='sm:hidden flex flex-1 justify-end items-center'>
@@ -59,7 +72,7 @@ const Navbar = () => {
                 key={Link.id}
                 className={`${
                   active === Link.title 
-                    ? "text-white" 
+                    ? "text-text-sky-400" 
                     : "text-secondary"
                 } font-poppins font-medium cursor-pointer text-[16px]`}
                 onClick={() => {
@@ -70,6 +83,15 @@ const Navbar = () => {
                 <a href={`#${Link.id}`}>{Link.title}</a>
               </li>
             ))}
+
+             {/* Resume button */}
+              <li>
+                <AwesomeButton type="secondary" className="aws-btn">
+                  <a href="/Resume.pdf" target="_blank" rel="noreferrer">
+                    Resume
+                  </a>
+                </AwesomeButton>
+              </li>
             </ul>
           </div>
         </div>

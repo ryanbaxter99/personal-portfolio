@@ -9,10 +9,13 @@ const App = () => {
         <Background />
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar />
-          <Hero />
+          <div className="section-spacing">
+            <Hero />
+          </div>
         </div>
-        <About />
-        {/* <Tech /> */}
+        <div className="section-spacing">
+          <About />
+        </div>
         <Experience />
         <Works />
         <Feedbacks />

@@ -13,6 +13,14 @@
   color-scheme: dark;
 }
 
+/* 
+  320px — 480px: Mobile devices.
+  481px — 768px: iPads, Tablets.
+  769px — 1024px: Small screens, laptops.
+  1025px — 1200px: Desktops, large screens.
+  1201px and more — Extra large screens, TV.
+*/
+
 .hash-span {
   margin-top: -100px;
   padding-bottom: 100px;
@@ -23,21 +31,57 @@
   padding-right: 20em;
 }
 
+/* Desktop */
+
+.text-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+}
+
+.about-padding {
+  padding: 2rem;
+}
+
+.section-spacing {
+  margin-top: 1rem;
+  margin-bottom: 40rem;
+}
+
 @media (max-width: 1100px) {
   .hero-disc {
     padding-right: 1em;
   }
 }
 
-.about-padding {
-  height: 80vh;
-}
 
-@media (max-width: 600px) {
-  .about-padding {
-    height: 70vh;
+
+
+/* 
+--------------------------------
+*/
+
+/* button-animation-style 69B8FF*/
+.aws-btn {
+  --button-default-height: 38px;
+  --button-default-font-size: 14px;
+  --button-default-border-radius: 6px;
+  --button-horizontal-padding: 17px;
+  --button-raise-level: 2px;
+  --button-hover-pressure: 2.5;
+  --transform-speed: 0.325s;
+
+
+  --button-secondary-color: transparent;
+  --button-secondary-color-dark: transparent;
+  --button-secondary-color-light: #38BDF8;
+  --button-secondary-color-hover: transparent;
+  --button-secondary-color-active: transparent;
+  --button-secondary-border: 2px solid #38BDF8;
   }
-}
+
+
+
 
 .typing-effect span:first-child {
   margin-left: 0;

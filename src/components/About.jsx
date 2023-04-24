@@ -17,7 +17,7 @@ const About = () => {
         <h2 className={styles.sectionHeadText}>About Me</h2>
 
         <div className="flex flex-col lg:flex-row lg:gap-10">
-          <div className="md:w-2/3 lg:w-1/2 xl:w-5/12">
+          <div className="about-content">
             <motion.p
               variants={fadeIn("", "", 0.1, 1)}
               className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
@@ -48,7 +48,6 @@ const About = () => {
               </a>
             </motion.p>
 
-
             <motion.p
               variants={fadeIn("", "", 0.1, 1)}
               className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
@@ -64,12 +63,6 @@ const About = () => {
               ))}
             </ul>
           </div>
-
-          <div className="md:w-1/3 lg:w-1/2 xl:w-7/12 flex justify-center lg:block lg:mt-6 mt-6 md:mt-0">
-            <div className="mt-4">
-              <Tech />
-            </div>
-          </div>
         </div>
       </motion.div>
     </>
@@ -77,3 +70,4 @@ const About = () => {
 };
 
 export default SectionWrapper(About, "about");
+``
